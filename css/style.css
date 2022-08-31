@@ -549,6 +549,20 @@ body {
   margin-bottom: 20px;
 }
 
+.stock__bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.stock__bg img {
+  width: 100%;
+}
+.stock__bg img:last-child {
+  margin-top: -150px;
+}
+
 .stock__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2296,6 +2310,10 @@ body {
   }
 
   .working__block::after {
+    display: none;
+  }
+
+  .stock__bg {
     display: none;
   }
 }
