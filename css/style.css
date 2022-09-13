@@ -38,7 +38,7 @@ ul, ol {
 }
 
 .container {
-  max-width: 1060px;
+  max-width: 1110px;
   width: 100%;
   margin: 0 auto;
 }
@@ -1514,7 +1514,237 @@ body {
     left: -50px;
   }
 }
+.crumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 33px;
+}
+.crumbs a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #727271;
+}
+.crumbs span {
+  display: block;
+  margin: 0 14px;
+}
+.crumbs p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FF0000;
+}
+
+.tachograph .banner {
+  height: 143px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.tachograph__wrap {
+  padding-top: 71px;
+  padding-bottom: 101px;
+}
+
+.tachograph__title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: capitalize;
+  color: #323232;
+  margin-bottom: 42px;
+}
+.tachograph__title span {
+  border-bottom: 1px solid #FF0000;
+}
+
+.tachograph__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tachograph__img {
+  width: 540px;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+}
+.tachograph__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+}
+
+.tachograph__content {
+  width: 540px;
+}
+.tachograph__content .text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #323232;
+  margin-bottom: 32px;
+}
+
+.tachograph__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #727271;
+  padding: 12px 34px 14px 32px;
+  margin-top: 30px;
+}
+.tachograph__bottom .text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  max-width: 726px;
+  width: 100%;
+}
+.tachograph__bottom .btn {
+  border: 0;
+  width: 250px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #F64D03;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.btn_burgir_left {
+  display: none;
+}
+
 @media screen and (max-width: 1111px) {
+  .btn_burgir_left {
+    width: 28px;
+    height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 16px;
+    border: 0;
+    background-color: transparent;
+  }
+  .btn_burgir_left span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #727271;
+    border-radius: 1px;
+  }
+
+  .tachograph__wrap {
+    padding-top: 32px;
+    padding-bottom: 0;
+  }
+
+  .tachograph__title {
+    max-width: 255px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+  }
+  .tachograph__title span {
+    display: block;
+  }
+
+  .tachograph__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .tachograph__img {
+    max-width: 290px;
+    width: 100%;
+    margin: 0 auto;
+    height: 151px;
+    margin-bottom: 16px;
+  }
+
+  .tachograph__content {
+    max-width: 290px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .tachograph__content .text {
+    margin-bottom: 26px;
+  }
+
+  .tachograph__bottom {
+    margin-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 16px 32px 30px 32px;
+  }
+  .tachograph__bottom .text {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .tachograph__bottom .btn {
+    width: 100%;
+  }
+
+  .tachograph .banner {
+    height: 0;
+  }
+
+  .crumbs {
+    display: none;
+  }
+
   section {
     display: none;
   }
@@ -1553,15 +1783,13 @@ body {
   }
 
   .header__bottom .box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .header__logo {
+    margin: 0 auto;
     margin-bottom: 12px;
-    margin-right: 0;
   }
 
   .header__text {

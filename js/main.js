@@ -60,3 +60,9 @@ $(".burgir_btn .btn").click(function() {
     $(".burgir_btn").toggleClass("open");
     $(".header__navbar").toggleClass("open");
 });
+if(document.querySelector('.btn_burgir_left')) {
+    $(".btn_burgir_left").click(function() {
+        $(".burgir_btn").toggleClass("open");
+        $(".header__navbar").toggleClass("open");
+    });
+}
