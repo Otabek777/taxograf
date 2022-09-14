@@ -66,3 +66,9 @@ if(document.querySelector('.btn_burgir_left')) {
         $(".header__navbar").toggleClass("open");
     });
 }
+$(".header__call").click(function() {
+    $(".modal").addClass("open");
+});
+$(".modal__close").click(function() {
+    $(".modal").removeClass("open");
+});
