@@ -72,3 +72,8 @@ $(".header__call").click(function() {
 $(".modal__close").click(function() {
     $(".modal").removeClass("open");
 });
+if(document.querySelector('.tachograph__bottom')) {
+    $(".tachograph__bottom .btn").click(function() {
+        $(".modal").addClass("open");
+    });
+}
