@@ -830,6 +830,8 @@ body {
 
 .we_serve {
   padding-bottom: 82px;
+  position: relative;
+  z-index: 2;
 }
 
 .we_serve__title {
@@ -893,8 +895,6 @@ body {
 }
 .working__block span {
   position: absolute;
-  top: -70%;
-  left: -30%;
 }
 .working__block .icon {
   height: 56px;
@@ -937,12 +937,33 @@ body {
 }
 
 .working__block:nth-child(1) span {
-  top: -60%;
+  top: -55%;
   left: -10%;
 }
 
+.working__block:nth-child(2) span {
+  top: -55%;
+  left: -25%;
+}
+
+.working__block:nth-child(3) span {
+  top: -57%;
+  left: -24%;
+}
+
 .working__block:nth-child(4) span {
+  top: -57%;
+  left: -21%;
+}
+
+.working__block:nth-child(5) span {
+  top: -69%;
+  left: -25%;
+}
+
+.working__block:nth-child(6) span {
   top: -60%;
+  left: -22%;
 }
 
 .clients {
@@ -977,16 +998,51 @@ body {
   margin-bottom: 72px;
 }
 
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-102.5%);
+            transform: translateX(-102.5%);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-102.5%);
+            transform: translateX(-102.5%);
+  }
+}
 .clients__box {
+  overflow: hidden;
+}
+.clients__box .wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  white-space: nowrap;
+  -webkit-animation: marquee 5s infinite linear;
+          animation: marquee 5s infinite linear;
+}
+
+.clients__box:hover .wrap {
+  -webkit-animation-play-state: paused !important;
+          animation-play-state: paused !important;
 }
 
 .clients__slider {
   display: none;
+}
+
+.clients__box:nth-child(2) .wrap {
+  -webkit-animation: marquee 6.5s infinite linear;
+          animation: marquee 6.5s infinite linear;
 }
 
 .clients__block {
@@ -999,6 +1055,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-width: 255px;
   width: 255px;
   height: 136px;
   margin-bottom: 47px;
@@ -1006,10 +1063,6 @@ body {
   border: 1px solid #F7EDE1;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-
-.clients__block:nth-child(4n) {
-  margin-right: 0;
 }
 
 .clients__block:hover {
@@ -1789,6 +1842,10 @@ body {
 }
 
 @media screen and (max-width: 1111px) {
+  .working .container .bg {
+    top: 100px;
+  }
+
   .sub_menu {
     display: none !important;
   }

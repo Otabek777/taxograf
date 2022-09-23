@@ -49,12 +49,6 @@ $(window).scroll(function() {
     $(".banner .img").css({
         "transform" : "translate(0px, " + st/10 + "px"
     });
-    // $(".banne__logo").css({
-    //     "transform" : "translate(" + -st/10 + "px, " + "0px"
-    // });
-    // $(".banner__phone").css({
-    //     "transform" : "translate(" + -st/20 + "px, " + "0px"
-    // });
 });
 $(".burgir_btn .btn").click(function() {
     $(".burgir_btn").toggleClass("open");
